@@ -1,0 +1,15 @@
+.homeComponent {
+    display: grid;
+    grid-template-rows: 65vh 10vh 40vh 30vh;
+}
+
+.carouselContainer {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.trending {
+    display:flex;
+    align-items: center;
+    padding-left: 2em;
+}

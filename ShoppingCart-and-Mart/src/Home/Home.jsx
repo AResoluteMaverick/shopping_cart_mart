@@ -1,22 +1,23 @@
+import styles from './Home.module.css'
 
 function DisplayHomePhoto () {
     return (
-        <div className="dhpContainer">This is my Photo</div>
+        <div className={styles.dhpContainer}></div>
     )
 }
 
 function HomeMotto () {
     return (
-        <div className="motto">This is my Motto</div>
+        <div className={styles.motto}></div>
     )
 }
 
 
 function HomeCarousel () {
     return (
-        <div className="carouselContainer">
-            <div className="trending">Trending</div>
-            <div className="carousel">This is the Carousel</div>
+        <div className={styles.carouselContainer}>
+            <div className={styles.trending}>Trending</div>
+            <div className="carousel"></div>
         </div>
     )
 }
@@ -31,7 +32,7 @@ function Membership () {
 
 export default function Home () {
    return ( 
-      <div>
+      <div className={styles.homeComponent}>
           <DisplayHomePhoto />
           <HomeMotto />
           <HomeCarousel />

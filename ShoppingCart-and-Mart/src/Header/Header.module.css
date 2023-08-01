@@ -11,6 +11,7 @@
     list-style-type: none;
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 .navBar {
@@ -20,7 +21,7 @@
 }
 
 @media (max-width: 600px) {
-    .navBar {
+    .headerli {
         flex-direction: column;
     }
 }
