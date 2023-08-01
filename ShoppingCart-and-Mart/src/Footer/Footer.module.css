@@ -1,0 +1,45 @@
+.footerContainer {
+    display: flex;
+    height: 320px;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 15%;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 40%;
+}
+
+.dummyLinks {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 2em;
+    padding-right: 1em;
+    gap: 2em;
+}
+
+.dummyTitle{
+    color: white;
+}
+
+@media (max-width: 685px) {
+    .linkContainer {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .dummyLinks {
+        flex-direction: row;
+        
+    }
+}

@@ -1,30 +1,36 @@
+import styles from './Footer.module.css'
+import { Link } from "react-router-dom";
+
 function FooterLinks () {
     return (
-        <div className="linkContainer">    
-            <div className="dummyLinks">
-                <ul>
-                    <li>This is a link</li>
-                    <li>This is a Link</li>
-                    <li>This is a Link</li>
-                    <li>This is a LInk</li>
+        <div className={styles.linkContainer}>    
+            <div>
+                <div className = {styles.dummyTitle}>This is a Title</div>
+                <ul className = {styles.dummyLinks}>
+                    <li><Link to="/error">This is a link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a LInk</Link></li>
                 </ul>
             </div>
 
-            <div className="dummyLinks">
-                <ul>
-                    <li>This is a link</li>
-                    <li>This is a Link</li>
-                    <li>This is a Link</li>
-                    <li>This is a LInk</li>
+            <div>
+                <div className = {styles.dummyTitle}>This is a Title</div>
+                <ul className = {styles.dummyLinks}>
+                    <li><Link to="/error">This is a link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a LInk</Link></li>
                 </ul>
             </div>
 
-            <div className="dummyLinks">
-                <ul>
-                    <li>This is a link</li>
-                    <li>This is a Link</li>
-                    <li>This is a Link</li>
-                    <li>This is a LInk</li>
+            <div>
+                <div className = {styles.dummyTitle}>This is a Title</div>
+                <ul className = {styles.dummyLinks}>
+                    <li><Link to="/error">This is a link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a Link</Link></li>
+                    <li><Link to="/error">This is a LInk</Link></li>
                 </ul>
             </div>
     </div>
@@ -33,7 +39,7 @@ function FooterLinks () {
 
 function SocialIcons () {
     return (
-    <div className="socialLinks">
+    <div className={styles.socialLinks}>
         <div className="twitter socials">T</div>
         <div className="facebook socials">F</div>
         <div className="youtube socials">Y</div>
@@ -45,7 +51,7 @@ function SocialIcons () {
 
 export default function Footer () {
     return (
-        <footer>
+        <footer className={styles.footerContainer}>
             <FooterLinks />
             <SocialIcons />
         </footer>

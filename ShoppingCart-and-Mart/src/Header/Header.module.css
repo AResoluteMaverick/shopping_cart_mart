@@ -2,11 +2,6 @@
     height: 150px;
 }
 
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
 .headerli {
     list-style-type: none;
     display: flex;

@@ -15,6 +15,10 @@ const router = createBrowserRouter([
       element: <Collection />,
       errorElement: <ErrorPage />
     },
+    {
+      path: "/error",
+      element: <ErrorPage />
+    },
   ]);
 
   return <RouterProvider router={router} />;
