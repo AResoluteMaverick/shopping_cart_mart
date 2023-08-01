@@ -1,4 +1,6 @@
+import React from 'react';
 import styles from './Home.module.css'
+import ProductList from '../assets/ProductCard'
 
 function DisplayHomePhoto () {
     return (
@@ -17,7 +19,7 @@ function HomeCarousel () {
     return (
         <div className={styles.carouselContainer}>
             <div className={styles.trending}>Trending</div>
-            <div className="carousel"></div>
+            <ProductList />
         </div>
     )
 }
