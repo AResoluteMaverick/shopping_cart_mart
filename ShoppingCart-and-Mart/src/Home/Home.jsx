@@ -1,6 +1,7 @@
+
 function DisplayHomePhoto () {
     return (
-        <div className="dhpContainer">This is my Motto</div>
+        <div className="dhpContainer">This is my Photo</div>
     )
 }
 

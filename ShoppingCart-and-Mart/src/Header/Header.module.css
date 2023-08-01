@@ -1,0 +1,26 @@
+.titleDiv {
+    height: 150px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerli {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navBar {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .navBar {
+        flex-direction: column;
+    }
+}
