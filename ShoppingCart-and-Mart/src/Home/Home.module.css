@@ -1,3 +1,14 @@
+@keyframes slide {
+    from{
+        transform: translateX(0);
+
+    }
+    to{
+        transform: translateX(-100%)
+    }
+    
+}
+
 .homeComponent {
     display: grid;
     grid-template-rows: 65vh 10vh 40vh 30vh;
@@ -5,14 +16,34 @@
 
 .carouselContainer {
     display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselWrap {
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 1350px;
+    white-space: nowrap;
+    animation: 35s slide infinite linear;
+    z-index: 1;
+    position: absolute;
+    gap: 40px;
 }
 
 .trending {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
-    margin: auto 1em auto auto;
-    height: 5vh;
-    width: 5vw;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 30%;
+    height: 100%;
 }

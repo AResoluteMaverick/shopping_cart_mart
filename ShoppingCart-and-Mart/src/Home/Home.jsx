@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Home.module.css'
 import ProductList from '../assets/ProductCard'
 
+
+
 function DisplayHomePhoto () {
     return (
         <div className={styles.dhpContainer}></div>
@@ -14,12 +16,17 @@ function HomeMotto () {
     )
 }
 
+const MemoizedProductList = React.memo(ProductList);
 
 function HomeCarousel () {
     return (
         <div className={styles.carouselContainer}>
             <div className={styles.trending}>Trending</div>
-            <ProductList />
+            <div className={styles.carouselWrap}>
+                <MemoizedProductList />
+                <MemoizedProductList />
+                <MemoizedProductList />
+            </div>
         </div>
     )
 }

@@ -11,18 +11,15 @@ function ProductList() {
   }, []);
 
   return (
-    <div className={styles.carousel}>
+    <>
       {products.map(({ id, title, price, image }) => (
         <div key={id} className={styles.productCard}>
           <img src={image} alt={title} className={styles.productImage} />
-          <div className={styles.titleWrapper}>
-            <h2 className={styles.productTitle}>{title}</h2>
-            <p className={styles.productPrice}>${price}</p>
-          </div>
-          <button className={styles.addtoCart}> Add to Cart </button>
+            <div className={styles.productTitle}>{title}</div>
+            <div className={styles.productPrice}>${price}</div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
