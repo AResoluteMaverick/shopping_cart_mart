@@ -12,12 +12,14 @@ function ProductList() {
 
   return (
     <div className={styles.carousel}>
-      {products.map(({ id, title, price, description, image }) => (
+      {products.map(({ id, title, price, image }) => (
         <div key={id} className={styles.productCard}>
           <img src={image} alt={title} className={styles.productImage} />
-          <h2 className="productTitle">{title}</h2>
-          <p className="productPrice">${price}</p>
-          <p className="productDescription">{description}</p>
+          <div className={styles.titleWrapper}>
+            <h2 className={styles.productTitle}>{title}</h2>
+            <p className={styles.productPrice}>${price}</p>
+          </div>
+          <button className={styles.addtoCart}> Add to Cart </button>
         </div>
       ))}
     </div>
