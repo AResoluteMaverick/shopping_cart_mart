@@ -4,12 +4,15 @@
 }
 
 .carouselContainer {
-    display: grid;
-    grid-template-rows: 20% 80%;
+    display: flex;
 }
 
 .trending {
     display:flex;
     align-items: center;
-    padding-left: 2em;
+    justify-content: center;
+    padding: 1em;
+    margin: auto 1em auto auto;
+    height: 5vh;
+    width: 5vw;
 }
