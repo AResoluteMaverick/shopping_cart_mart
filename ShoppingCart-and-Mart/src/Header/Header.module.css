@@ -18,18 +18,34 @@
 .headerli {
     list-style-type: none;
     display: flex;
-    gap: 50px;
+    gap: 75px;
     align-items: center;
+    padding: 1em;
+}
+
+header {
+    position: relative;
 }
 
 .navBar {
     display: flex;
-    padding: 1em;
     justify-content: center;
+    width: clamp(300px, 25%, 25%);
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    background-color: var(--main-color-light);
+    border-radius: 35px;
+    border: 2px solid var(--main-color-dark);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .headerli {
-        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .navBar{
+        top: 80%;
     }
 }
