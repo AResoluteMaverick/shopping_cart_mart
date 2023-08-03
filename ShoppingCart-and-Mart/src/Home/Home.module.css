@@ -41,10 +41,11 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid var(--main-color-dark);
-    border-bottom: 1px solid var(--main-color-dark);
     margin-top: 1em;
     margin-bottom: 1em;
+    background-color: var(--dark-shade);
+    padding-top: 1em;
+    align-items: center;
 }
 
 .carouselWrap {
@@ -69,12 +70,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: white;
     width: 30%;
     height: 100%;
 
-    background-color: var(--main-color-light);
-    color: var(--main-color-dark);
+    background-color: var(--main-color-dark);
+    color: var(--main-color-light);
+    border-radius: 0 25px 25px 0;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .membershipContainer{
