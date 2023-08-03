@@ -1,6 +1,19 @@
+@import '../assets/themeColors.css';
+
+
 .titleDiv {
     height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    background-color: var(--main-color-light);
 }
+
+.LogoTitle {
+    margin-left: 20%;
+    color: var(--main-color-dark);
+}
+
 
 .headerli {
     list-style-type: none;

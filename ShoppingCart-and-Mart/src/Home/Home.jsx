@@ -12,7 +12,9 @@ function DisplayHomePhoto () {
 
 function HomeMotto () {
     return (
-        <div className={styles.motto}></div>
+        <div className={styles.motto}>
+            <h1 className={styles.mottoPlaceholder}>Welcome to the ensemble of the Elite</h1>
+        </div>
     )
 }
 
@@ -33,7 +35,10 @@ function HomeCarousel () {
 
 function Membership () {
     return (
-        <div className="membershipContainer">Sign-up at</div>
+        <div className={styles.membershipContainer}>
+          <div className={styles.membershipPhoto}></div>   
+          <div className={styles.membershipSignUp}>Sign-up at</div>
+        </div>
     )
 }
 

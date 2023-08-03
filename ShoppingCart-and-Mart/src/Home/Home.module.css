@@ -1,3 +1,5 @@
+@import '../assets/themeColors.css';
+
 @keyframes slide {
     from{
         transform: translateX(0);
@@ -11,7 +13,26 @@
 
 .homeComponent {
     display: grid;
-    grid-template-rows: 65vh 10vh 40vh 30vh;
+    grid-template-rows: 75vh 10vh 40vh 30vh;
+    background-color: var(--main-color-light);
+}
+
+.dhpContainer{
+    background-image: url(../assets/photos/saeed-anahid--GhLgB-oXNw-unsplash.jpg);
+}
+
+.motto{
+    display: flex;
+    background-color: var(--main-color-dark);
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.mottoPlaceholder {
+    color: var(--main-color-light);
 }
 
 .carouselContainer {
@@ -46,4 +67,25 @@
     background: white;
     width: 30%;
     height: 100%;
+
+    background-color: var(--main-color-light);
+    color: var(--main-color-dark);
+}
+
+.membershipContainer{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.membershipPhoto {
+    width: 50%;
+    background-image: url(../assets/photos/pexels-nataliya-vaitkevich-8100370.jpg);
+    background-size: cover;
+}
+
+.membershipSignUp {
+    width: 50%;
+    background-color: var(--dark-shade);
+    color: var(--main-color-light);
 }

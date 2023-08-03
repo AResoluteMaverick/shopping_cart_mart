@@ -1,3 +1,5 @@
+@import '../assets/themeColors.css';
+
 .footerContainer {
     display: flex;
     height: 320px;
@@ -9,6 +11,7 @@
     justify-content: center;
     width: 60%;
     gap: 15%;
+    background-color: var(--main-color-light);
 }
 
 .socialLinks {
@@ -17,6 +20,7 @@
     align-items: center;
     gap: 2em;
     width: 40%;
+    background-color: var(--main-color-light);
 }
 
 .dummyLinks {
@@ -30,6 +34,11 @@
 
 .dummyTitle{
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (max-width: 685px) {
