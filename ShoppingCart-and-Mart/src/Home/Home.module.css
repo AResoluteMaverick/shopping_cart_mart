@@ -13,12 +13,14 @@
 
 .homeComponent {
     display: grid;
-    grid-template-rows: 75vh 10vh 40vh 30vh;
+    grid-template-rows: 75vh 10vh 45vh 30vh;
     background-color: var(--main-color-light);
 }
 
 .dhpContainer{
     background-image: url(../assets/photos/saeed-anahid--GhLgB-oXNw-unsplash.jpg);
+    border-top: 3px solid var(--light-shade);
+    border-bottom: 1.5px solid var(--light-shade);
 }
 
 .motto{
@@ -43,9 +45,8 @@
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: var(--dark-shade);
+    background-color: var(--main-color-dark);
     padding-top: 1em;
-    align-items: center;
 }
 
 .carouselWrap {
@@ -73,7 +74,7 @@
     width: 30%;
     height: 100%;
 
-    background-color: var(--main-color-dark);
+    background-color: var(--dark-shade);
     color: var(--main-color-light);
     border-radius: 0 25px 25px 0;
     font-size: 2em;
@@ -81,7 +82,7 @@
 }
 
 .membershipContainer{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
 }
@@ -95,7 +96,26 @@
 
 .membershipSignUp {
     width: 50%;
-    background-color: var(--dark-shade);
-    color: var(--main-color-light);
+    color: var(--main-color-dark);
+    border: 3px solid var(--dark-shade);
+    border-left: none;
     border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.membershipTagline {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.membershipJoinUs {
+    margin-bottom: 30px;
+}
+
+.membershipInput {
+    width: 40%;
+    height: 30px;
 }

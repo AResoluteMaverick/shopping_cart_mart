@@ -37,7 +37,11 @@ function Membership () {
     return (
         <div className={styles.membershipContainer}>
           <div className={styles.membershipPhoto}></div>   
-          <div className={styles.membershipSignUp}>Sign-up at</div>
+          <div className={styles.membershipSignUp}>
+            <p className={styles.membershipTagline}>The Art of Elegance, the Luxury of Style: Step into the World of Lux.</p>
+            <p className={styles.membershipJoinUs}>Join our Newsletter now</p>
+            <input className={styles.membershipInput} type="text" placeholder="Enter your email address"/>
+          </div>
         </div>
     )
 }
