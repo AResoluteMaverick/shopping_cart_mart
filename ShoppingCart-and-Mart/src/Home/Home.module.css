@@ -36,6 +36,8 @@
 
 .mottoPlaceholder {
     color: var(--main-color-light);
+    font-family: var(--titular-font);
+    font-size: 2.5em;
 }
 
 .carouselContainer {
@@ -44,7 +46,7 @@
     position: relative;
     overflow: hidden;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 25px;
     background-color: var(--main-color-dark);
     padding-top: 1em;
 }
@@ -77,8 +79,9 @@
     background-color: var(--dark-shade);
     color: var(--main-color-light);
     border-radius: 0 25px 25px 0;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
+    font-family: var(--titular-font);
 }
 
 .membershipContainer{
@@ -107,12 +110,14 @@
 }
 
 .membershipTagline {
-    font-size: 2em;
+    font-size: 2.1em;
     margin-bottom: 0;
+    font-family: var(--titular-font);
 }
 
 .membershipJoinUs {
     margin-bottom: 30px;
+    font-family: var(--description-font);
 }
 
 .membershipInput {

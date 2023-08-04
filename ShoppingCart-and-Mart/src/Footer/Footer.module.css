@@ -2,8 +2,9 @@
 
 .footerContainer {
     display: flex;
-    height: 320px;
-    margin-top: 20px;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
 }
 
 .linkContainer {
@@ -13,6 +14,18 @@
     width: 60%;
     gap: 15%;
     background-color: var(--light-shade);
+    font-family: var(--description-font);
+    color: var(--main-color-light);
+    font-size: 1em;
+}
+
+.linkContainer::after {
+    content: "";
+    position: absolute;
+    right: 40%;
+    height:75%;
+    width: 1px; /* This sets the width of the division line */
+    background: var(--main-color-light); /* This sets the color of the division line */
 }
 
 .socialLinks {
@@ -24,6 +37,10 @@
     background-color: var(--light-shade);
 }
 
+.dummyTitle {
+    font-weight: bold;
+}
+
 .dummyLinks {
     display: flex;
     flex-direction: column;
@@ -33,14 +50,15 @@
     gap: 2em;
 }
 
-.dummyTitle{
-    color: white;
+.dummyLinks a:hover {
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
 }
+
+
 
 @media (max-width: 685px) {
     .linkContainer {

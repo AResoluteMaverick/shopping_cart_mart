@@ -5,7 +5,7 @@
     height: 150px;
     display: flex;
     align-items: center;
-    font-size: 2em;
+    font-size: 2.5em;
     background-color: var(--main-color-light);
     font-family: var(--title-font);
 }
@@ -21,7 +21,8 @@
     display: flex;
     gap: 75px;
     align-items: center;
-    padding: 1em;
+    font-family: var(--titular-font-two);
+    font-size: 1.5em;
 }
 
 header {
