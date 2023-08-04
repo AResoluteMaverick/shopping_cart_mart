@@ -25,9 +25,9 @@
 
 .motto{
     display: flex;
-    background-color: var(--main-color-dark);
     align-items: center;
     justify-content: center;
+    background-color: var(--main-color-dark);
     max-width: 50%;
     margin: 0 auto;
     padding: 0 2em;
@@ -55,7 +55,7 @@
     display: flex;
     flex-shrink: 0;
     height: 100%;
-    width: 1350px;
+    width: 100%;
     white-space: nowrap;
     animation: 35s slide infinite linear;
     z-index: 1;
