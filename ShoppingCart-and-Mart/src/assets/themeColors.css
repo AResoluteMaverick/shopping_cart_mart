@@ -1,6 +1,30 @@
+@font-face {
+    font-family: 'Quesha';
+    src: url(./fonts/Quesha-gndR.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url(./fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Olivera';
+    src: url(./fonts/oliver.a.ttf);
+}
+
+@font-face {
+    font-family: 'Brune';
+    src: url(./fonts/classy-brune.reg-free-regular.ttf);
+}
+
 :root {
     --dark-shade: #4F4557;
     --main-color-light: #F4EEE0;
     --main-color-dark: #6D5D6E;
     --light-shade: #393646;
+
+    --title-font: 'Brune';
+    --description-font: 'RobotoSlab';
+    --titular-font: 'Olivera';
 }

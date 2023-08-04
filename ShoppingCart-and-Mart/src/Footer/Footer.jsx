@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function FooterLinks () {
     return (
-        <div className={styles.linkContainer}>    
+        <div className={styles.linkContainer}>
             <div>
                 <div className = {styles.dummyTitle}>This is a Title</div>
                 <ul className = {styles.dummyLinks}>
