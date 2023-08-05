@@ -1,0 +1,16 @@
+.productCard {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.productImage {
+  width: 50%; 
+  object-fit: contain; 
+}
+
+.productTitle, .productPrice {
+  width: 100%; 
+  text-align: center; 
+}

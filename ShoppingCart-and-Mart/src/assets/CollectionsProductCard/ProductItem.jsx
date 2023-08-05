@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from './CollectionProductCard.module.css'
+import styles from './ProductItem.module.css'
 
 function ProductItem() {
   const [products, setProducts] = useState([]);

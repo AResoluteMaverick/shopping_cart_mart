@@ -1,5 +1,7 @@
+import ProductItem from '../assets/CollectionsProductCard/ProductItem.jsx'
+
 export default function AllCollection () {
     return (
-        <div>This is All</div>
+        <ProductItem />
     )
 }
