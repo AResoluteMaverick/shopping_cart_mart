@@ -1,0 +1,45 @@
+@import '../assets/themeColors.css';
+
+.collectionsComponent {
+    display: grid;
+    grid-template-rows: 55vh 90vh;
+}
+
+.displayCollectionDescription {
+    display: flex;
+    border: 1px solid black;
+}
+
+.collectionDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    padding: 50px;
+    width: 40%;
+}
+
+.collectionPhoto {
+    width: 60%;
+    background-image: url(../assets/photos/pexels-virgimaldonado-5558228.jpg);
+    background-size: cover;
+}
+
+.highlight {
+    font-family: var(--title-font);
+}
+
+.productArea {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+}
+
+.productNavigation {
+    border: 1px solid black;
+}
+
+.displayProductCards {
+    border: 1px solid black;
+}
