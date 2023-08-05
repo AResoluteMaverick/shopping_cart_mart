@@ -33,13 +33,18 @@
 .productArea {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: minmax(auto, 300px) 1fr;
 }
 
 .productNavigation {
     border: 1px solid black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .displayProductCards {
     border: 1px solid black;
+    padding: 25px;
 }

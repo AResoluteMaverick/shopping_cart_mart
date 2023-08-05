@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css'
-import ProductList from '../assets/ProductCard'
+import ProductList from '../assets/HomeProductCard/CarouselProductCard'
 
 
 

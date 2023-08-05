@@ -1,0 +1,33 @@
+.productImage {
+    align-self: center;
+    padding-top: 4em;
+    height: 30%;
+}
+
+.productCard {
+    width: 300px;
+    height: 90%;  /* or max-height: 100%; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: white;
+    border: 6px solid var(--main-color-light);
+    border-radius: 25px;
+}
+
+.productTitle {
+    font-size: 1em;
+    margin: auto;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.productPrice {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    align-self: center;
+    padding-right: 1em;
+
+}

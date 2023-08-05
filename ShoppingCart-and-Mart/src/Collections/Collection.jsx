@@ -1,6 +1,8 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import styles from "./Collection.module.css";
+import { Outlet, Link } from 'react-router-dom';
+
 
 function DisplayCollectionPhoto () {
     return (
@@ -19,12 +21,13 @@ function DisplayProductArea () {
     return (
         <div className={styles.productArea}>
             <nav className={styles.productNavigation}>
-                <div className={styles.displayAllProducts}>All</div>
-                <div className={styles.displayJewelryProducts}>Jewelry</div>
-                <div className={styles.displayMensCollection}>Men&apos;s Collection</div>
-                <div className={styles.displayWomensCollection}>Women&apos;s Collection</div>
+              <Link to="all" className={styles.displayAllProducts}>All</Link>
+              <Link to="jewelrycollection" className={styles.displayJewelryProducts}>Jewelry</Link>
+              <Link to="mencollection" className={styles.displayMensCollection}>Men&apos;s Collection</Link>
+              <Link to="womencollection" className={styles.displayWomensCollection}>Women&apos;s Collection</Link>
             </nav>
             <div className={styles.displayProductCards}>
+                <Outlet />
             </div>
         </div>
     )
