@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types"; 
-import styles from './ProductItem.module.css'
+import styles from './ProductItem.module.css';
+import { Link } from 'react-router-dom';
+
 
 function ProductItem({ category = "All" }) {
   const [products, setProducts] = useState([]);
@@ -19,6 +21,7 @@ function ProductItem({ category = "All" }) {
     if (category === "All" || category === "Jewelry") {
       urls.push('https://fakestoreapi.com/products/category/jewelery');
     }
+    
 
     Promise.all(urls.map(url => fetch(url)))
       .then((responses) => Promise.all(responses.map((res) => res.json())))
@@ -33,12 +36,23 @@ function ProductItem({ category = "All" }) {
 
   return (
     <>
-      {products.map(({ id, title, price, image }) => (
-        <div key={id} className={styles.productCard}>
-          <img src={image} alt={title} className={styles.productImage} />
-          <div className={styles.productTitle}>{title}</div>
-          <div className={styles.productPrice}>${price}</div>
-        </div>
+      {products.map(({ id, title, price, image, description }) => (
+        <Link to={`/product/${title}-${id}`} key={id} className={styles.productCard} 
+        state={
+          {id: id, 
+          title: title, 
+          price: price, 
+          image: image, 
+          description: description}}>
+            
+          <div key={id}>
+            <img src={image} alt={title} className={styles.productImage} />
+            <div className={styles.wrapperTP}>
+              <div className={styles.productTitle}>{title}</div>
+              <div className={styles.productPrice}>${price}</div>
+            </div>
+          </div>
+        </Link>
       ))}
     </>
   );

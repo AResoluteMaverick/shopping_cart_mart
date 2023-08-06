@@ -6,6 +6,7 @@ import JewelryCollection from "./Collections/JewelryCollection";
 import MenCollection from "./Collections/MenCollection";
 import WomenCollection from "./Collections/WomenCollection";
 import AllCollection from "./Collections/AllCollection";
+import ProductPage from "./Collections/ProductPage/ProductPage";
 
 const Router = () => {
 const router = createBrowserRouter([
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         { path: "womencollection", element: <WomenCollection /> },
         { path: "all", element: <AllCollection /> },
       ],
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "/product/:id",
+      element: <ProductPage />,
       errorElement: <ErrorPage />
     },
     {

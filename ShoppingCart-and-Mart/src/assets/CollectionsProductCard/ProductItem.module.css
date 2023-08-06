@@ -1,16 +1,50 @@
+@import '../themeColors.css';
+
 .productCard {
-  display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: grid;
+  grid-template-rows: 50% 50%;
+  background-color: white;
+
+  border: 2px solid var(--main-color-dark);
+}
+
+.wrapperTP {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  padding: 0 15px 15px 15px;
 }
 
 .productImage {
-  width: 50%; 
-  object-fit: contain; 
+  width: 50%;
+  object-fit: contain;
+  max-height: 80%;
+  margin: auto;
 }
 
 .productTitle, .productPrice {
   width: 100%; 
   text-align: center; 
+  overflow: hidden;
+}
+
+.productTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 2em;
+  margin: auto;
+
+  font-family: var(--titular-font-two);
+  font-size: 1.4em;
+}
+
+.productPrice {
+  margin-top: auto;
+  font-family: var(--description-font)
+}
+
+.wrapperTP:hover {
+  color: var(--main-color-light);
+  background-color: var(--dark-shade);
 }

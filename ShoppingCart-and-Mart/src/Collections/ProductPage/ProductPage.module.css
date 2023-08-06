@@ -1,0 +1,52 @@
+.productPageContainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.productPageContainer div {
+    border: 1px solid black;
+}
+
+.displayProductPhoto {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.displayProductInformation{
+    width: 40%;
+    height: 75%;
+
+    display: grid;
+    grid-template-rows: auto 70% auto;
+}
+
+.displayProductTitle {
+    border: 1px solid black;
+}
+
+.productImage {
+    height: 80%;
+}
+
+.displayProductTitle,
+.displayProductDescription,
+.addToCartWrapper {
+    padding-left: 35px;
+}
+
+.displayProductDescription{
+    margin-top: 0px;
+    font-size: 1.5em;
+}
+
+.addToCartWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}

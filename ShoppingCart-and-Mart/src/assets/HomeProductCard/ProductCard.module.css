@@ -22,7 +22,12 @@
     font-size: 1em;
     margin: auto;
     max-width: 80%;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
+    max-height: 2.1em;
 }
 
 .productPrice {
