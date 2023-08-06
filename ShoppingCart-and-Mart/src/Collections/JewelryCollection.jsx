@@ -1,5 +1,7 @@
+import ProductItem from "../assets/CollectionsProductCard/ProductItem";
+
 export default function JewelryCollection () {
     return (
-        <div>This is Jewelry</div>
+        <ProductItem category='Jewelry'/>
     )
 }
