@@ -1,0 +1,46 @@
+.cartItem {
+    border: 1px solid black;
+}
+
+.cartItemsContainer{
+    display: grid;
+    grid-template-rows: 10vh repeat(auto-fill, minmax(10vh, 1fr));
+    max-height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.emptyCart {
+    position: absolute;
+    left: 47%;
+    top: 50%;
+}
+
+.cartContainer {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: 80vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemCalculationContainer {
+    margin-top: 13%;
+    margin-bottom: auto;
+    border: 1px solid black;
+    min-height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.orderTotal {
+    border: 1px solid black;
+}
+
+.checkOut {
+    border: 1px solid black;
+    max-width: 150px;
+    padding: 20px;
+}

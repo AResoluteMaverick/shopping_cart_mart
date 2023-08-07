@@ -1,22 +1,40 @@
-import { useSelector } from 'react-redux'
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import { useSelector } from 'react-redux';
+import styles from './CartPage.module.css';
 
-export default function CartPage () {
+function getTotal(cartItems) {
+  return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+}
+
+export default function CartPage() {
   const cartItems = useSelector((state) => state.cart);
+  const orderTotal = getTotal(cartItems);
 
   return (
-    <div>
-      <h2>Your Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        cartItems.map((item, index) => (
-          <div key={index}>
-            <h3>{item.title}</h3>
-            <p>Price: {item.price}</p>
-            {/* Add other item details as needed */}
-          </div>
-        ))
-      )}
-    </div>
+    <>
+      <Header />
+      <div className={styles.cartContainer}>
+        {cartItems.length === 0 ? (
+          <p className={styles.emptyCart}>Your cart is empty.</p>
+        ) : (
+          <>
+            <div className={styles.cartItemsContainer}>
+              {cartItems.map((item, index) => (
+                <div key={index} className={styles.cartItem}>
+                  <h3>{item.title}</h3>
+                  <p>Price: {item.price}</p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.itemCalculationContainer}>
+              <h2 className={styles.orderTotal}>Order Total: ${orderTotal}</h2>
+              <button className={styles.checkOut}>Check Out</button>
+            </div>
+          </>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }
