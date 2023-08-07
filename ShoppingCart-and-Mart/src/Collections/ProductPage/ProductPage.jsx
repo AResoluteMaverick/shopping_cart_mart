@@ -1,16 +1,18 @@
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
-import styles from './ProductPage.module.css'
-import { useLocation } from 'react-router-dom' 
-
+import styles from './ProductPage.module.css';
+import { useLocation } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../Store/cartSlice.js';
 
 export default function ProductPage () {
     const location = useLocation()
     const { id, title, price, image, description } = location.state
     const productItem = {id, price, title, image, description};
+    const dispatch = useDispatch();
 
     const handleAddToCart = (productItem) => {
-
+      dispatch(addToCart(productItem));
     };
 
     return(
