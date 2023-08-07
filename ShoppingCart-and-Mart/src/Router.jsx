@@ -7,6 +7,7 @@ import MenCollection from "./Collections/MenCollection";
 import WomenCollection from "./Collections/WomenCollection";
 import AllCollection from "./Collections/AllCollection";
 import ProductPage from "./Collections/ProductPage/ProductPage";
+import CartPage from "./Store/CartPage";
 
 const Router = () => {
 const router = createBrowserRouter([
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
     {
       path: "/product/:id",
       element: <ProductPage />,
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "/cart",
+      element: <CartPage />,
       errorElement: <ErrorPage />
     },
     {

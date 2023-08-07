@@ -8,7 +8,7 @@ import { addToCart } from '../../Store/cartSlice.js';
 export default function ProductPage () {
     const location = useLocation()
     const { id, title, price, image, description } = location.state
-    const productItem = {id, price, title, image, description};
+    const productItem = {id, price, title, image};
     const dispatch = useDispatch();
 
     const handleAddToCart = (productItem) => {
