@@ -24,21 +24,26 @@ export default function CartPage() {
           <div className={styles.cartItemsContainer}>
            {cartItems.map((item, index) => (
               <div key={index} className={styles.cartItem}>
-                  <h3>{item.title}</h3>
-                  <p>Price: {item.price}</p>
-                  <p>Quantity: {item.quantity}</p>
-                  <button onClick={() => dispatch(removeFromCart(index))}>Delete Item</button>
-                  <button onClick={() => dispatch(updateQuantity({ index, quantity: item.quantity + 1 }))}>Increase Quantity</button>
-                  <button onClick={() => dispatch(updateQuantity({ index, quantity: item.quantity - 1 }))} disabled={item.quantity <= 1}>
-                    Decrease Quantity
-                  </button>
+                  <div className={styles.productImage}>
+                    <img src={item.image} alt={item.title} className={styles.imagesrc}/>
+                  </div>
+                  <h3 className={styles.itemTitle}>{item.title}</h3>
+                  <p className={styles.itemPrice}>{item.price}</p>
+                  <div className={styles.quantityWrapper}>
+                      <button onClick={() => dispatch(updateQuantity({ index, quantity: item.quantity + 1 }))}>-</button>
+                      <p className={styles.itemQuantity}>{item.quantity}</p>
+                      <button onClick={() => dispatch(updateQuantity({ index, quantity: item.quantity - 1 }))} disabled={item.quantity <= 1}>
+                        +
+                      </button>
+                  </div>
+                  <button onClick={() => dispatch(removeFromCart(index))}>x</button>
               </div>
           ))}
           </div>
-            <div className={styles.itemCalculationContainer}>
+          <div className={styles.itemCalculationContainer}>
               <h2 className={styles.orderTotal}>Order Total: ${orderTotal}</h2>
               <button className={styles.checkOut}>Check Out</button>
-            </div>
+          </div>
           </>
         )}
       </div>
