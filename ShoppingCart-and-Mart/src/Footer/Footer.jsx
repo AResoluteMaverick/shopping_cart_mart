@@ -1,5 +1,9 @@
 import styles from './Footer.module.css'
 import { Link } from "react-router-dom";
+import facebookIcon from '../assets/icons/facebook-svgrepo-com.svg';
+import instagramIcon from '../assets/icons/instagram-svgrepo-com.svg';
+import twitterIcon from '../assets/icons/twitter-154-svgrepo-com.svg';
+import youtubeIcon from '../assets/icons/youtube-168-svgrepo-com.svg';
 
 function FooterLinks () {
     return (
@@ -40,10 +44,10 @@ function FooterLinks () {
 function SocialIcons () {
     return (
         <div className={styles.socialLinks}>
-        <div className="twitter socials">T</div>
-        <div className="facebook socials">F</div>
-        <div className="youtube socials">Y</div>
-        <div className="instagram socials">I</div>
+            <Link to="/error"> <img className={styles.icon} src={twitterIcon} alt= "Twitter"  /> </Link>
+            <Link to="/error"> <img className={styles.icon} src={facebookIcon} alt= "Facebook"  /> </Link>
+            <Link to="/error"> <img className={styles.icon} src={instagramIcon} alt= "Instagram"  /> </Link>
+            <Link to="/error"> <img className={styles.icon} src={youtubeIcon} alt= "YouTube"  /> </Link>
         </div>
     )
 }
