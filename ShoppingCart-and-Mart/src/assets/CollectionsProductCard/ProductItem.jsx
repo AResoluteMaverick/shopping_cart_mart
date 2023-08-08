@@ -45,12 +45,10 @@ function ProductItem({ category = "All" }) {
           image: image, 
           description: description}}>
             
-          <div key={id}>
+          <div key={id} className={styles.wrapper}>
             <img src={image} alt={title} className={styles.productImage} />
-            <div className={styles.wrapperTP}>
               <div className={styles.productTitle}>{title}</div>
               <div className={styles.productPrice}>${price}</div>
-            </div>
           </div>
         </Link>
       ))}

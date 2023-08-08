@@ -8,6 +8,8 @@
 .displayCollectionDescription {
     display: flex;
     border: 1px solid black;
+    font-family: var(--description-font);
+
 }
 
 .collectionDescription {
@@ -15,33 +17,40 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.2em;
-    padding: 50px;
-    width: 40%;
+    font-size: 1.1em;
+    padding: 4em;
+    width: 30%;
+    color: var(--main-color-light);
+
+    background-color: var(--main-color-dark);
 }
 
 .collectionPhoto {
-    width: 60%;
+    width: 70%;
     background-image: url(../assets/photos/pexels-virgimaldonado-5558228.jpg);
     background-size: cover;
 }
 
 .highlight {
     font-family: var(--title-font);
+    font-weight: bold;
 }
 
 .productArea {
-    margin-top: 50px;
+    margin-top: 3em;
     display: grid;
-    grid-template-columns: minmax(auto, 300px) 1fr;
+    grid-template-columns: 20vw 1fr;
 }
 
 .productNavigation {
-    border: 1px solid black;
-    padding: 50px;
+    padding: 4em;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 1em;
+    max-height: 400px;
+    justify-content: center;
+
+    font-family: var(--description-font);
 }
 
 .displayProductCards {
@@ -49,7 +58,56 @@
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(auto, 300px));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 300px));
     gap: 20px;
   }
+
+.collectionTitle {
+    font-family: var(--description-font);
+}
+
+.navLink {
+    padding: 1em;
+    border-radius: 0px 15px 15px 0;
+}
+
+.navLink:hover {
+    background-color: var(--main-color-dark);
+    transition: all 0.5 ease-in-out;
+    color: var(--main-color-light);
+}
+
+@media (max-width: 750px) {
+
+    .collectionPhoto {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .collectionDescription {
+        width: 100%;
+    }
+   
+    .productArea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productNavigation {
+        height: 200px;
+        padding-top: 0;
+    }
+
+    .displayProductCards {
+        border: 1px solid black;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(auto, 150px));
+        gap: 20px;
+      }
+
+
+
+}
   

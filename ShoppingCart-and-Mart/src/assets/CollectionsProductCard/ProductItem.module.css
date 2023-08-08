@@ -1,17 +1,10 @@
 @import '../themeColors.css';
 
 .productCard {
-  display: grid;
-  grid-template-rows: 50% 50%;
   background-color: white;
-
   border: 2px solid var(--main-color-dark);
-}
-
-.wrapperTP {
-  display: grid;
-  grid-template-rows: 60% 40%;
-  padding: 0 15px 15px 15px;
+  min-height: 250px;
+  padding: 1em;
 }
 
 .productImage {
@@ -40,11 +33,21 @@
 }
 
 .productPrice {
-  margin-top: auto;
   font-family: var(--description-font)
 }
 
-.wrapperTP:hover {
-  color: var(--main-color-light);
-  background-color: var(--dark-shade);
+.wrapper {
+  display: grid;
+  grid-template-rows: 60% 20% 20%;
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .productPrice {
+   visibility: hidden;
+  }
+
+  .productCard {
+    padding: 0.5em;
+  }
 }
