@@ -10,9 +10,8 @@
 .linkContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 60%;
-    gap: 15%;
     background-color: var(--light-shade);
     font-family: var(--description-font);
     color: var(--main-color-light);
@@ -72,7 +71,7 @@ a {
 
     .dummyLinks {
         flex-direction: row;
-        font-size: 2vw;
+        font-size: clamp(9px, 2vw, 12px);
     }
     .dummyContainer {
         display: flex;
