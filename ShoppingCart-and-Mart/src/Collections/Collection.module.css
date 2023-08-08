@@ -73,8 +73,8 @@
 
 .navLink:hover {
     background-color: var(--main-color-dark);
-    transition: all 0.5 ease-in-out;
     color: var(--main-color-light);
+    transition: all 0.3s ease; 
 }
 
 @media (max-width: 750px) {

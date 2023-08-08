@@ -4,6 +4,7 @@ import styles from './ProductPage.module.css';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../Store/cartSlice.js';
+import addCartIcon from '../../assets/icons/shopping-cart-16-svgrepo-com.svg';
 
 export default function ProductPage () {
     const location = useLocation()
@@ -26,9 +27,11 @@ export default function ProductPage () {
                 <h1 className={styles.displayProductTitle}>{title}</h1>
                 <p className={styles.displayProductDescription}>{description}</p>
                 <div className={styles.addToCartWrapper}>
-                    <div className={styles.productPrice}>{price}</div>
-                    <div>input</div>
-                    <button onClick={() => handleAddToCart(productItem)}>Add to Cart</button>
+                    <div className={styles.productPrice}>${price}</div>
+                    <div></div>
+                    <button onClick={() => handleAddToCart(productItem)} className={styles.addtoCart}>Add to Cart
+                    <img src={addCartIcon} alt ="Add to cart" className={styles.icon} />
+                    </button>
                 </div>
             </div>
         </div>
