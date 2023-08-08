@@ -43,13 +43,12 @@
 }
 
 .productNavigation {
-    padding: 4em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
     max-height: 400px;
     justify-content: center;
-
     font-family: var(--description-font);
 }
 
@@ -69,6 +68,7 @@
 .navLink {
     padding: 1em;
     border-radius: 0px 15px 15px 0;
+    min-width: 100px;
 }
 
 .navLink:hover {
@@ -79,13 +79,28 @@
 
 @media (max-width: 750px) {
 
+    .collectionsComponent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displayCollectionDescription {
+        display: flex;
+        flex-direction: column-reverse;
+
+        height: 90vh;
+        margin-top: 1em;
+    }
+
     .collectionPhoto {
-        visibility: hidden;
-        width: 0%;
+        width: auto;
+        height: 100%;
     }
 
     .collectionDescription {
-        width: 100%;
+        height: 50%;
+        width: auto;
+        padding: 2em;
     }
    
     .productArea {
@@ -96,6 +111,8 @@
     .productNavigation {
         height: 200px;
         padding-top: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .displayProductCards {
