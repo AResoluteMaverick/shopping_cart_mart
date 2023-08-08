@@ -67,11 +67,25 @@ a {
 @media (max-width: 685px) {
     .linkContainer {
         flex-direction: column;
-        gap: 0;
+        gap: 1em;
     }
 
     .dummyLinks {
         flex-direction: row;
-        
+        font-size: 2vw;
+    }
+    .dummyContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dummyTitle {
+        align-self: center;
+
+    }
+
+    .socialLinks {
+        flex-direction: column;
+        gap: 5px;
     }
 }

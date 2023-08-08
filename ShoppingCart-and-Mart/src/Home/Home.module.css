@@ -37,7 +37,7 @@
 .mottoPlaceholder {
     color: var(--main-color-light);
     font-family: var(--titular-font);
-    font-size: 2.5em;
+    font-size: clamp(27px, 32px, 5vw);
 }
 
 .carouselContainer {
@@ -79,13 +79,13 @@
     background-color: var(--dark-shade);
     color: var(--main-color-light);
     border-radius: 0 25px 25px 0;
-    font-size: 3em;
+    font-size: clamp(27px, 3em, 5vw);
     font-weight: bold;
     font-family: var(--titular-font);
 }
 
 .membershipContainer{
-    width: 60%;
+    width: 60vw;
     margin: 0 auto;
     display: flex;
 }
@@ -106,21 +106,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 1em;
 }
 
 .membershipTagline {
-    font-size: 2.1em;
+    font-size: clamp(9px, 2.1em, 5vw);
     margin-bottom: 0;
     font-family: var(--titular-font);
 }
 
 .membershipJoinUs {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     font-family: var(--description-font);
+    
 }
 
 .membershipInput {
     width: 40%;
-    height: 30px;
+    height: 3vh;
+}
+
+@media (max-width: 800px) {
+    .membershipPhoto {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .membershipSignUp {
+        width: 100%;
+        border-left: 3px solid var(--main-color-dark);
+        border-radius: 10px;
+    }
 }
