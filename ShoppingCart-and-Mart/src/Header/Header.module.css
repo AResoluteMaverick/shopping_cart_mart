@@ -5,13 +5,15 @@
     height: 150px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 2.5em;
     background-color: var(--main-color-light);
     font-family: var(--title-font);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .LogoTitle {
-    margin-left: 20%;
     color: var(--main-color-dark);
 }
 
@@ -40,6 +42,26 @@ header {
     background-color: var(--main-color-light);
     border-radius: 35px;
     border: 2px solid var(--main-color-dark);
+    height: 60px; 
+}
+.cartIcon {
+    max-height: 4vh;
+    filter: invert(37%) sepia(14%) saturate(479%) hue-rotate(249deg) brightness(96%) contrast(89%);
+}
+
+.link {
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+.link:hover {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+  
+.navBar:hover {
+    background-color: var(--main-color-dark); /* Dark background color, define this in themeColors.css */
+    transition: all 0.3s ease; 
+    color: var(--main-color-light);
 }
 
 @media (max-width: 850px) {

@@ -60,7 +60,9 @@ a {
 
 .icon {
     max-width: 25px;
+    filter: invert(94%) sepia(19%) saturate(387%) hue-rotate(312deg) brightness(105%) contrast(91%);
 }
+
 
 @media (max-width: 685px) {
     .linkContainer {
