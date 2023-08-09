@@ -44,6 +44,7 @@
 
 .productImage {
     height: 80%;
+    max-width: 100%;
 }
 .productPrice {
     font-family: var(--description-font);
