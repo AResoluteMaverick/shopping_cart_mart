@@ -55,7 +55,27 @@ header {
     transition: all 0.3s ease; /* Smooth transition for the hover effect */
     margin-left: 0;
 }
-  
+
+.cartIconContainer {
+    position: relative;
+}
+
+.cartBadge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.3em;
+    font-weight: bold;
+    width: 14px;
+  }
+
 .link:hover {
     font-weight: bold;
     font-size: 1.2em;
