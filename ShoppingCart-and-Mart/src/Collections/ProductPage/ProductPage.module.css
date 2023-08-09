@@ -59,7 +59,7 @@
 
 .addToCartWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .addtoCart {
@@ -92,5 +92,27 @@
     .icon {
         filter: invert(37%) sepia(14%) saturate(479%) hue-rotate(249deg) brightness(96%) contrast(89%);
         transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 850px ) {
+    .productPageContainer {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .displayProductInformation{
+        height: auto;
+        width: 80%;
+    }
+
+    .displayProductPhoto {
+        width: auto;
+        height: 50%;
+    }
+
+    .productImage {
+        width: 50%;
+        height: auto;
     }
 }

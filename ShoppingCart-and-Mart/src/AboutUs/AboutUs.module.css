@@ -1,0 +1,49 @@
+@import '../assets/themeColors.css';
+
+
+.aboutUsComponent {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+    color: var(--dark-shade);
+    margin-top: 50px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperCreation {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 auto;
+    gap: 4em;
+}
+
+p {
+    font-family: var(--description-font);
+    font-size: 1.1em;
+}
+
+.aboutLux {
+    font-family: var(--title-font);
+    align-self: center;
+}
+
+.headingtwo {
+    font-family: var(--titular-font);
+    text-align: center;
+}
+
+.tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

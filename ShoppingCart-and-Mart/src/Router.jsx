@@ -8,6 +8,7 @@ import WomenCollection from "./Collections/WomenCollection";
 import AllCollection from "./Collections/AllCollection";
 import ProductPage from "./Collections/ProductPage/ProductPage";
 import CartPage from "./Store/CartPage";
+import AboutUs from "./AboutUs/AboutUs";
 
 const Router = () => {
 const router = createBrowserRouter([
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         { path: "womencollection", element: <WomenCollection /> },
         { path: "all", element: <AllCollection /> },
       ],
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "/aboutus",
+      element: <AboutUs />,
       errorElement: <ErrorPage />
     },
     {

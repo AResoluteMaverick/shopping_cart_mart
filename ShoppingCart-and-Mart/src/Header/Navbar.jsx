@@ -7,7 +7,7 @@ export default function Navbar () {
       <ul className={styles.headerli}>
         <li><Link className={styles.link} to="/">Home</Link></li>
         <li><Link className={styles.link} to="/collection">Collection</Link></li>
-        <li><Link className={styles.link} to="/contact">About Us</Link></li>
+        <li><Link className={styles.link} to="/aboutus">About Us</Link></li>
       </ul>
     </nav>
     )

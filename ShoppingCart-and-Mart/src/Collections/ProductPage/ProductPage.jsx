@@ -28,7 +28,6 @@ export default function ProductPage () {
                 <p className={styles.displayProductDescription}>{description}</p>
                 <div className={styles.addToCartWrapper}>
                     <div className={styles.productPrice}>${price}</div>
-                    <div></div>
                     <button onClick={() => handleAddToCart(productItem)} className={styles.addtoCart}>Add to Cart
                     <img src={addCartIcon} alt ="Add to cart" className={styles.icon} />
                     </button>

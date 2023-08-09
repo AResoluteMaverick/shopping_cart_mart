@@ -1,12 +1,28 @@
 import React from 'react';
-import styles from './Home.module.css'
-import ProductList from '../assets/HomeProductCard/CarouselProductCard'
+import styles from './Home.module.css';
+import ProductList from '../assets/HomeProductCard/CarouselProductCard';
+import introductionPhoto from '../assets/photos/pexels-cottonbro-studio-6474931.jpg';
 
 
 
 function DisplayHomePhoto () {
     return (
         <div className={styles.dhpContainer}></div>
+    )
+}
+
+function DisplayIntroduction () {
+    return (
+        <>
+        <div className={styles.introductionContainer}>
+            <p className={styles.introductionP}>
+                Welcome to Lux, the epitome of elegance and style. Since our inception in 2000, Lux has been the hallmark of timeless beauty, crafting a world that transcends ordinary definitions of fashion. We are not just a brand; we are a lifestyle, a statement, a legacy.
+            </p>
+            <div className={styles.introductionPhoto}>
+                <img src={introductionPhoto} alt="elegance" className={styles.introductionImage} />
+            </div>
+        </div>
+        </>
     )
 }
 
@@ -53,6 +69,7 @@ export default function Home () {
       <div className={styles.homeComponent}>
           <DisplayHomePhoto />
           <HomeMotto />
+          <DisplayIntroduction />
           <HomeCarousel />
           <Membership />
       </div>

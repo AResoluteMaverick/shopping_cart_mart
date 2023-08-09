@@ -1,0 +1,11 @@
+@import './assets/themeColors.css';
+
+.errorComponent {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: var(--main-color-dark);
+    font-family: var(--description-font);
+}
