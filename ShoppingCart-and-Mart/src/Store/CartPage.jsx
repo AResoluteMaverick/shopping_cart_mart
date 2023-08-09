@@ -1,9 +1,11 @@
+import { useState } from 'react'; 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './CartPage.module.css';
 import { removeFromCart, updateQuantity } from './cartSlice';
 import checkoutIcon from '../assets/icons/shopping-cart-21-svgrepo-com.svg';
+import Popup from "../assets/popup/Popup";
 
 function getTotal(cartItems) {
   return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
@@ -13,6 +15,15 @@ export default function CartPage() {
   const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const orderTotal = getTotal(cartItems);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleCheckout = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <>
@@ -43,13 +54,14 @@ export default function CartPage() {
           </div>
           <div className={styles.itemCalculationContainer}>
               <h2 className={styles.orderTotal}>Order Total: ${orderTotal}</h2>
-              <button className={styles.checkOut}>Check Out
+              <button className={styles.checkOut} onClick={handleCheckout}>Check Out
               <img src={checkoutIcon} alt ="Checkout" className={styles.checkoutIcon} />
               </button>
           </div>
           </>
         )}
       </div>
+      {showPopup && <Popup onClose={handleClosePopup} />}
       <Footer />
     </>
   );
