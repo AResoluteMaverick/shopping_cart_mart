@@ -88,3 +88,19 @@ a {
         gap: 5px;
     }
 }
+
+.gitFooter {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 50px;
+    font-weight: bold;
+    font-family: var(--description-font);
+}
+
+.gitIcon {
+    max-width: 25px;
+    margin-left: 15px;
+}

@@ -4,6 +4,7 @@ import facebookIcon from '../assets/icons/facebook-svgrepo-com.svg';
 import instagramIcon from '../assets/icons/instagram-svgrepo-com.svg';
 import twitterIcon from '../assets/icons/twitter-154-svgrepo-com.svg';
 import youtubeIcon from '../assets/icons/youtube-168-svgrepo-com.svg';
+import gitIcon from '../assets/icons/github-mark-white.svg';
 
 function FooterLinks () {
     return (
@@ -55,9 +56,14 @@ function SocialIcons () {
 
 export default function Footer () {
     return (
+        <>
         <footer className={styles.footerContainer}>
             <FooterLinks />
             <SocialIcons />
         </footer>
+        <div className={styles.gitFooter}> <a href="https://github.com/AResoluteMaverick">2023 AResoluteMaverick</a> 
+        <img className={styles.gitIcon} src={gitIcon} />
+        </div>
+        </>
     )
 }
